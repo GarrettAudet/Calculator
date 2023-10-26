@@ -1,6 +1,6 @@
 body {
     font-family: "Times New Roman";
-    background-color: #333333;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,24 +9,59 @@ body {
 }
 
 .container {
-    background-color: #FFFFFF;
-    height: 400px;
-    width: 400px;
-    border-radius: 5px;
+    background-color: #F0F0F0;
+    height: 450px;
+    width: 300px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.display {
-    width: 90%;
-    height: 20%;
-    margin: 20px;
-    border-radius: 5px;
-    background-color: #F0F0F0;
-    box-sizing: border-box;
+    border: 2px solid black;
 }
 
 .controls {
+    flex-grow: 1;
+    width: 90%;
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    margin: 30px 20px;
+}
 
+.display {
+    position: relative;
+    width: 90%;
+    height: 15%;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #666666;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    border: 2px solid black;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 22px;
+}
+
+.allclear, .clear, .operators, .digits, .decimal, .equals {
+    background-color: #333333;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.allclear:hover, .clear:hover, .operators:hover, .digits:hover, .decimal:hover, .equals:hover {
+    background-color: #000080;
+}
+
+.equals {
+    border-radius: 40px;
+    grid-column: span 2;
 }
