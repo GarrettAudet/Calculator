@@ -1,0 +1,32 @@
+body {
+    font-family: "Times New Roman";
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #FFFFFF;
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    width: 90%;
+    height: 20%;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    box-sizing: border-box;
+}
+
+.controls {
+
+}
