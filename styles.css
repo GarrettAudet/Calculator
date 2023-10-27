@@ -42,7 +42,16 @@ body {
 
 .text {
     position: absolute;
+    color: white;
     top: 0;
+    right: 0;
+    margin: 5px 10px;
+    font-size: 22px;
+}
+
+.output {
+    position: absolute;
+    bottom: 0;
     right: 0;
     margin: 10px;
     font-size: 22px;
@@ -58,7 +67,8 @@ body {
 }
 
 .allclear:hover, .clear:hover, .operators:hover, .digits:hover, .decimal:hover, .equals:hover {
-    background-color: #000080;
+    background-color: white;
+    color:black;
 }
 
 .equals {
